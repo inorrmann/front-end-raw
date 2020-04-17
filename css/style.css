@@ -327,6 +327,17 @@ p {
     width: 18%
 }
 
+.column-left {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.column-right {
+    float: right;
+    width: 50%
+}
+
 .row::after {
     content:"";
     display: table;

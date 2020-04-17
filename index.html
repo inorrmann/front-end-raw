@@ -173,11 +173,13 @@
                     <h5 class="create-new-project">Create New Project</h5>
                 </div>
                 <div class="wide-column-left">
-                    <select id="projects">
-                        <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
-                        <option value="Pulingo">Pulingo</option>
-                        <option value="Piaja">Piaja</option>
-                    </select>
+                    <div class="dropdown">
+                        <select id="projects">
+                            <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
+                            <option value="Pulingo">Pulingo</option>
+                            <option value="Piaja">Piaja</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <h3>Category <span class="required-primary">*</span></h3>
@@ -222,6 +224,38 @@
         <!-- Details Section -->
         <h2>Details</h2>
         <div class="section-body">
+            <h3>Overall Dimensions <span class="required-primary">*</span></h3>
+            <textarea class="editable" rows="1"></textarea>
+            <div class="row">
+                <div class="column-left">
+                    <h3>Leg/Base Material <span class="required-primary">*</span></h3>
+                    <select id="leg-material">
+                        <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
+                        <option value="alder">Alder</option>
+                        <option value="lorem ipsum">Lorem Ipsum</option>
+                        <option value="lorem ipsum">Lorem Ipsum</option>
+                        <option value="metal">Metal</option>
+                        <option value="com">(COM) Client Provides Own Material</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </div>
+                <div class="column-right">
+                    <h3>Leg/Base Finish <span class="required-primary">*</span></h3>
+                    <select id="leg-finish">
+                        <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
+                        <option value="white">White</option>
+                        <option value="grey">Grey</option>
+                        <option value="charcoal">Charcoal</option>
+                        <option value="dark charcoal">Dark Charcoal</option>
+                        <option value="natural">Natural</option>
+                        <option value="brass">Brass</option>
+                        <option value="silver">Grey</option>
+                        <option value="com">(COM) Client Provides Own Finish</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </div>
+                <h3>COM/COL <span class="required-primary">*</span></h3>
+            </div>
         <!-- Form goes here -->
         </div>
 
