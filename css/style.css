@@ -283,6 +283,16 @@ h5 {
     margin: 0.3rem 0;
 }
 
+h6 {
+    font-size:0.9rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 .required-primary {
     color: var(--text-primary);
     font-weight: 500;
@@ -367,25 +377,22 @@ select {
     margin-bottom: 1rem;
 }
 
+option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+    background-color: var(--light);
+
+}
+
 /* Create Project Section */
 .create-new-project {
     color: var(--text-primary);
     text-decoration: underline;
     float: right;
 }
-
-/* .projects {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 100%;
-    font-family: var(--font-family);
-    font-weight: 700;
-    padding: 2rem;
-}
-
-.projects::after {
-    background-image: url("../images/Filter-by.svg");
-} */
 
 .categories {
     display: flex;
@@ -423,6 +430,19 @@ select {
     width: auto;
     padding-right: 0.8rem;
     vertical-align: middle;
+}
+
+/* Add Inspiration Section */
+.imported-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.file-placeholder {
+    margin: 0.5rem 2rem;
+    text-align: center;
 }
 
 /* Optional Details Section */
