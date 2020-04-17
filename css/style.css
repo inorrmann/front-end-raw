@@ -351,12 +351,41 @@ textarea {
     margin-bottom: 1rem;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 7px;
+    background: url("../images/Filter-by.svg");
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    background-size: 1rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 /* Create Project Section */
 .create-new-project {
     color: var(--text-primary);
     text-decoration: underline;
     float: right;
 }
+
+/* .projects {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    font-family: var(--font-family);
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.projects::after {
+    background-image: url("../images/Filter-by.svg");
+} */
 
 .categories {
     display: flex;
