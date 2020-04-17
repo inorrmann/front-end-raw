@@ -153,14 +153,37 @@
     -->
     <div class="page-body">
     
+        <!-- Create RFQ section -->
         <h2>Create RFQ</h2>
         <h5>Required <span class="required-primary">*</span></h5>
         <div class="section-body">
-            <h3>Piece Name</h3>
+            <div class="row">
+                <div class="wide-column-left">
+                    <h3>Piece Name <span class="required-primary">*</span></h3>
+                    <textarea class="editable" rows="1"></textarea>
+                </div>
+                <div class="narrow-column-right">
+                    <h3>Quantity <span class="required-primary">*</span></h3>
+                    <textarea class="editable" rows="1"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wide-column-left">
+                    <h3 class="float-left">Add To Project <span class="required-primary">*</span></h3>
+                    <h5 class="create-new-project">Create New Project</h5>
+                </div>
+            </div>
+            <h3>Category <span class="required-primary">*</span></h3>
+            <div class="row categories">
+                <button class="cat-button"><img src="./images/Upholstery.svg">Upholstery</button>
+                <button class="cat-button"><img src="./images/Casegoods.svg">Casegoods</button>
+                <button class="cat-button"><img src="./images/Metal.svg">Metal</button>
 
-        <!-- Form goes here -->
+            </div>
+
         </div>
 
+        <!-- Add Inspiration Section -->
         <h2>Add Inspiration, Photos, Drawings, Etc. <span class="required-primary">*</span></h2>
         <div class="section-body">
         <!-- Drag and Drop placeholder goes here -->
@@ -169,14 +192,14 @@
     
         
         <section class="section-line"></section>
-        
+        <!-- Details Section -->
         <h2>Details</h2>
         <div class="section-body">
         <!-- Form goes here -->
         </div>
 
         <section class="section-line"></section>
-        
+        <!-- Optional Details Section -->
         <h2>Optional Details</h2>
         
         <div class="section-indent">
@@ -186,41 +209,41 @@
         </div>
         
         <div class="row section-indent-left">
-            <div class="details-column-left">
-                <div id="hardware" class="optional-details">
+            <div class="wide-column-left">
+                <div id="hardware">
                     <h4>Hardware (COM)</h4>
                     <textarea class="editable" rows="1"></textarea>
                 </div>
-                <div id="seat-dimensions" class="optional-details">
+                <div id="seat-dimensions">
                     <h4>Seat Dimensions</h4>
                     <textarea class="editable" rows="1"></textarea>
                 </div>    
-                <div id="arm-height" class="optional-details">
+                <div id="arm-height">
                     <h4>Arm Height</h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="leg-height" class="optional-details">
+                <div id="leg-height">
                     <h4>Leg Height</h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="seam-style" class="optional-details">
+                <div id="seam-style">
                     <h4>Seam Style</h4>
                 </div>
-                <div id="frame-construction" class="optional-details">
+                <div id="frame-construction">
                     <h4>Frame Construction</h4>
                 </div>
-                <div id="cushion-config" class="optional-details">
+                <div id="cushion-config">
                     <h4>Cushion Configuration</h4>
                 </div>
-                <div id="cushion-fill" class="optional-details">
+                <div id="cushion-fill">
                     <h4>Cushion Fill</h4>
                 </div>
-                <div id="foam-density" class="optional-details">
+                <div id="foam-density">
                     <h4>Foam Density</h4>
                 </div>      
             </div>
-            <div class="details-column-right">
-                <button class="details-button-clicked">hardware</button>
+            <div class="narrow-column-right">
+                <button class="details-button-selected">hardware</button>
                 <button class="details-button">seat dimensions</button>
                 <button class="details-button">arm height</button>
                 <button class="details-button">leg height</button>
@@ -233,7 +256,7 @@
         </div> 
 
         <section class="section-line"></section>
-        
+        <!-- Factories Section -->
         <h2>Factories</h2>
         <div class="section-indent">
             <h5>The factories below have been selected based on your location and project specifications.
@@ -243,6 +266,7 @@
         </div>
         
         <section class="section-line"></section>
+        <!-- Additional Notes Section -->
         <h2>Additional Notes</h2>
         <div class="section-body">
             <textarea class="editable" rows="4"></textarea>

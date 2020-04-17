@@ -269,6 +269,7 @@ h2 {
 h3 {
     font-size: 1rem;
     font-weight: 700;
+    margin: 0.3rem 0;
 }
 h4 {
     font-size: 1.1rem;
@@ -279,10 +280,12 @@ h4 {
 h5 {
     font-size: 1rem;
     font-weight: 500;
+    margin: 0.3rem 0;
 }
 
 .required-primary {
     color: var(--text-primary);
+    font-weight: 500;
 }
 
 .section-line {
@@ -303,12 +306,13 @@ h5 {
     margin: 0 7rem 2rem;
 }
 
-.details-column-left {
+.wide-column-left {
     float: left;
     width: 82%;
+    padding-right: 2rem;
 }
 
-.details-column-right {
+.narrow-column-right {
     float: right;
     width: 18%
 }
@@ -319,31 +323,8 @@ h5 {
     clear: both;
 }
 
-.optional-details {
-    margin-right: 3rem;
-}
-
-.details-button {
-    width: 100%;
-    margin: 5px 0;
-    padding: 0.5rem 0;
-    border-radius: 7px;
-    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.1);
-    border: solid 1px #9c9c9c;
-    background-color: #ffffff;
-    font-family:  var(--font-family);
-    color: var(--text-neutral)
-}
-
-.details-button-clicked {
-    width: 100%;
-    margin: 5px 0;
-    padding: 0.5rem 0;
-    border-radius: 7px;
-    border: solid 2px #6cb6a3;
-    background-color: #deede8;
-    font-family:  var(--font-family);
-    color: var(--text-primary);
+.float-left {
+    float: left;
 }
 
 textarea { 
@@ -370,6 +351,62 @@ textarea {
     margin-bottom: 1rem;
 }
 
+/* Create Project Section */
+.create-new-project {
+    color: var(--text-primary);
+    text-decoration: underline;
+    float: right;
+}
+
+.categories {
+    display: flex;
+}
+
+.cat-button {
+    justify-content: center;
+    border-radius: 28.5px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.1);
+    border: solid 2px #9c9c9c;
+    background-color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    padding: 0.7rem;
+    width: 200px;
+    margin: 0.4rem 1rem 1rem;
+}
+
+.cat-button img {
+    height: 2rem;
+    width: auto;
+    padding-right: 0.8rem;
+    vertical-align: middle;
+}
+
+/* Optional Details Section */
+.details-button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0.5rem 0;
+    border-radius: 7px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #9c9c9c;
+    background-color: #ffffff;
+    font-family:  var(--font-family);
+    color: var(--text-neutral)
+}
+
+.details-button-selected {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0.5rem 0;
+    border-radius: 7px;
+    border: solid 2px #6cb6a3;
+    background-color: #deede8;
+    font-family:  var(--font-family);
+    color: var(--text-primary);
+}
+
+/* Additional Notes section */
 #request-quote {
     width: 225px;
     height: 50px;
@@ -382,10 +419,4 @@ textarea {
     font-weight: 600;
     color: var(--text-light);
     font-size: 1.2rem;
-}
-
-.edit-pencil {
-    float: right;
-    margin: 1rem 1rem 0;
-    z-index: 10;
 }
