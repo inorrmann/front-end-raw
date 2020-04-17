@@ -330,11 +330,13 @@ hr {
     float: left;
     width: 50%;
     padding-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .column-right {
     float: right;
-    width: 50%
+    width: 50%;
+    margin-bottom: 1rem;
 }
 
 .row::after {
@@ -394,9 +396,61 @@ option {
     font-family: var(--font-family);
     font-weight: 700;
     background-color: var(--light);
-
 }
 
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: var(--light);
+    border-radius: 50%;
+    border: solid 1px var(--text-dark);
+}
+
+.checkbox:hover input ~ .checkmark:after {
+    background-color: var(--boxshadow-light);
+}
+
+.checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: solid 1px var(--neutral);
+}
+
+.checkbox input:checked ~ .checkmark:after {
+    background-color: var(--primary);
+}
+    
 /* Create Project Section */
 .create-new-project {
     color: var(--text-primary);
@@ -443,7 +497,6 @@ option {
 }
 
 /* Add Inspiration Section */
-
 .drag-and-drop {
     width: 100%; 
     border-radius: 7px;
@@ -453,7 +506,7 @@ option {
     background-image: url("../images/Upload.svg");
     background-position: 50% 80%;
     background-repeat: no-repeat;
-    margin-bottom: 1rem;
+    margin: 3rem 0;
     text-align: center;
     padding: 2rem;
 }

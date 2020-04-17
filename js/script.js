@@ -23,3 +23,11 @@ $('.request-quote > img').click(function(e) {
 });
 
 /* ADD JS HERE */
+
+// $('.checkbox').on("click", function(e) {
+//     e.stopPropagation();
+//     if ($('.radio').prop('checked', true)) {
+
+//     }
+//     $('.radio').prop('checked', true);
+// })

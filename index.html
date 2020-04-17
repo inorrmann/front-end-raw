@@ -174,7 +174,7 @@
                 </div>
                 <div class="wide-column-left">
                     <div class="dropdown">
-                        <select id="projects">
+                        <select id="projects" required>
                             <!--  -->
                             <!--  -->
                             <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
@@ -268,8 +268,13 @@
             <div class="row">
                 <div class="column-left">
                     <h3>Leg/Base Material <span class="required-primary">*</span></h3>
-                    <select id="leg-material">
+                    <select id="leg-material" required>
+                        <!--  -->
+                        <!--  -->
                         <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
+                        <!--  -->
+                        <!--  -->
+                        <option selected></option>
                         <option value="alder">Alder</option>
                         <option value="lorem ipsum">Lorem Ipsum</option>
                         <option value="lorem ipsum">Lorem Ipsum</option>
@@ -280,8 +285,13 @@
                 </div>
                 <div class="column-right">
                     <h3>Leg/Base Finish <span class="required-primary">*</span></h3>
-                    <select id="leg-finish">
+                    <select id="leg-finish" required>
+                        <!--  -->
+                        <!--  -->
                         <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
+                        <!--  -->
+                        <!--  -->
+                        <option selected></option>
                         <option value="white">White</option>
                         <option value="grey">Grey</option>
                         <option value="charcoal">Charcoal</option>
@@ -294,8 +304,21 @@
                     </select>
                 </div>
                 <h3>COM/COL <span class="required-primary">*</span></h3>
+                <form class="row">
+                    <div class="column-left">
+                        <label class="checkbox">COM (Client's Own Material)
+                            <input type="radio" id="col" name="com/col" value="col">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="column-right">
+                        <label class="checkbox">COL (Client's Own Leather)
+                            <input type="radio" id="col" name="com/col" value="col">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
             </div>
-        <!-- Form goes here -->
         </div>
 
         <hr>
