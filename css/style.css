@@ -443,6 +443,25 @@ option {
 }
 
 /* Add Inspiration Section */
+
+.drag-and-drop {
+    width: 100%; 
+    border-radius: 7px;
+    border: dashed 2px var(--neutral);
+    height: 10rem;
+    background-color: var(--light);
+    background-image: url("../images/Upload.svg");
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.small-font {
+    font-size: 0.6rem;
+}
+
 .imported-files {
     display: flex;
     flex-wrap: wrap;
