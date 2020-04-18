@@ -25,11 +25,19 @@ $('.request-quote > img').click(function(e) {
 /* ADD JS HERE */
 
 // Create RFQ
-$('#button-upholstery').add('#button-casegoods').add('#button-metal').on("click", function(e) {
+$('#button-upholstery').add('#button-casegoods').add('#button-metal').click(function(e) {
     e.stopPropagation();
 
     $(this).toggleClass('cat-button-selected');
     $('.cat-button-selected').css("display", "block");
+});
+
+// Add Inspirations
+$('.delete').click(function(e) {
+    e.stopPropagation();
+
+    let id = $(this).parent().attr("id");
+    $(`#${id}`).css("display", "none");
 })
 
 
