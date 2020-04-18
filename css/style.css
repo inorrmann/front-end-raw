@@ -677,6 +677,11 @@ option {
    padding-right: 0.3rem;
 }
 
+.factory-placeholder {
+    text-align: center;
+    margin: 0 1rem;
+}
+
 /* Additional Notes section */
 #request-quote {
     width: 225px;
