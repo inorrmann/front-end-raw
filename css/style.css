@@ -696,6 +696,12 @@ textarea {
     position: relative;
     top: 0;
     left: 0;
+    cursor: pointer;
+}
+
+.factory-image:hover {
+    background-color: var(--hover-primary);
+    border-radius: 10%;
 }
 
 .factory-checkbox, .factory-checkbox-selected {

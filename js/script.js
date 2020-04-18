@@ -25,10 +25,11 @@ $('.request-quote > img').click(function(e) {
 /* ADD JS HERE */
 
 // Create RFQ
-$('#button-upholstery').add('#button-casegoods').add('#button-metal').click(function(e) {
+$('.cat-button').click(function(e) {
     e.stopPropagation();
 
-    $(this).toggleClass('cat-button-selected');
+    $('.cat-button-selected').attr('class', 'cat-button');
+    $(this).attr('class', 'cat-button-selected');
     $('.cat-button-selected').css('display', 'block');
 });
 
@@ -60,21 +61,27 @@ $('.delete-option').click(function(e) {
 })
 
 // Factories
+$('.factory-checkbox').click(function(e) {
+    e.stopPropagation();
+
+    $(this).toggleClass('factory-checkbox-selected');
+    $('.factory-checkbox-selected').css('display', 'block');
+});
 
 
 // modal
 const locations = {
-    'factory1': "Vernon, CA",
-    'factory2': "Dallas, TX",
-    'factory3': "Columbus, OH",
-    'factory4': "Atlanta, GA",
-    'factory5': "Vancouver, Canada"
+    'fac1': "Vernon, CA",
+    'fac2': "Dallas, TX",
+    'fac3': "Columbus, OH",
+    'fac4': "Atlanta, GA",
+    'fac5': "Vancouver, Canada"
 }
 
-$('.factory-checkbox').click(function() {
+$('.factory-image').click(function() {
     $('.modal').css('display', 'block');
 
-    let id = $(this).attr('id');
+    let id = $(this).parent().attr('id');
     let location = locations[id];
     console.log(location);
 
