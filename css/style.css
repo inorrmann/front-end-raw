@@ -277,6 +277,14 @@ h4 {
     margin: 0.8rem 0;
 }
 
+h4 img {
+    height: 2rem;
+    width: auto;
+    padding-left: 0.7rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
 h5 {
     font-size: 1rem;
     font-weight: 500;
@@ -361,7 +369,7 @@ textarea {
 }
 
 .small-textarea {
-    width: 50%;
+    width: 45%;
 }
 
 .editable {
@@ -384,7 +392,7 @@ select {
     background-size: 1rem;
     font-family: var(--font-family);
     font-weight: 700;
-    padding: 0.75rem;
+    padding: 0.7rem;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -449,6 +457,7 @@ option {
 
 .checkbox input:checked ~ .checkmark:after {
     background-color: var(--primary);
+    border: none;
 }
     
 /* Create Project Section */
@@ -579,6 +588,41 @@ option {
     font-family:  var(--font-family);
     color: var(--text-primary);
 }
+
+.dropdown-details {
+    padding: 0;
+    width: 45%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.add-icon {
+    vertical-align: center;
+    padding-left: 0.7rem;
+    position: absolute;
+    right: -45px;
+    top: 5px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#cushion-fill {
+    margin-bottom: 0;
+}
+.checkbox-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.option {
+    flex-basis: 33%;
+    margin: 0.7rem 0;
+
+}
+
+/* Factories */
 
 /* Additional Notes section */
 #request-quote {
