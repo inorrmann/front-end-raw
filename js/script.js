@@ -59,6 +59,34 @@ $('.delete-option').click(function(e) {
     $(`#${id}-button`).attr('class', 'details-button');
 })
 
+// Factories
+
+
+// modal
+const locations = {
+    'factory1': "Vernon, CA",
+    'factory2': "Dallas, TX",
+    'factory3': "Columbus, OH",
+    'factory4': "Atlanta, GA",
+    'factory5': "Vancouver, Canada"
+}
+
+$('.factory-checkbox').click(function() {
+    $('.modal').css('display', 'block');
+
+    let id = $(this).attr('id');
+    let location = locations[id];
+    console.log(location);
+
+    $('.factory-address').text(location)
+});
+
+window.onclick = function(event) {
+    if (event.target == $('.modal')[0]) {
+        $('.modal').css('display', 'none');
+    }
+};
+
 
 // customize dropdown menus
 var x, i, j, selElmnt, a, b, c;
