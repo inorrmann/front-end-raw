@@ -610,16 +610,24 @@ option {
 #cushion-fill {
     margin-bottom: 0;
 }
+
 .checkbox-options {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 2.5rem;
 }
 
 .option {
     flex-basis: 33%;
-    margin: 0.7rem 0;
+    margin: 0.8rem 0;
+    align-items: baseline;
 
+}
+
+.other-textarea {
+    width: 81%;
+    margin-top: -0.5rem;
 }
 
 /* Factories */
