@@ -668,7 +668,6 @@ textarea {
     flex-basis: 33%;
     margin: 0.8rem 0;
     align-items: baseline;
-
 }
 
 .other-textarea {
@@ -752,7 +751,8 @@ textarea {
     margin: 35% auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     width: 35%;
-    color: var(--text-primary)
+    color: var(--text-primary);
+    padding-bottom: 1.5rem;
 }
 
 .modal-content h3 {
@@ -790,11 +790,17 @@ textarea {
 .modal-content ul {
     margin-left: 3.5rem;
     padding-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .modal-content li {
     display: list-item;
     list-style-type: disc;
+    flex-basis: 50%;
+    margin: 0.2rem 0;
+    align-items: baseline;
 }
 
 /* Additional Notes section */
