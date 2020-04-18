@@ -50,6 +50,15 @@ $('.details-button').click(function(e) {
     $(`#${id}-button`).attr('class', 'details-button-selected');
 })
 
+$('.delete-option').click(function(e) {
+    e.stopPropagation();
+
+    let id =$(this).parent().parent().attr('id');
+    $(`#${id}`).css('display', 'none');
+
+    $(`#${id}-button`).attr('class', 'details-button');
+})
+
 
 // customize dropdown menus
 var x, i, j, selElmnt, a, b, c;
