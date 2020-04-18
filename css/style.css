@@ -632,6 +632,51 @@ option {
 
 /* Factories */
 
+.factories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 2rem;
+}
+
+.factory-detail {
+    margin: 0.5rem 2rem;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.factory-image {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.factory-checkbox, .factory-checkbox-selected {
+    height: 23px;
+    width: 23px;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    border: solid 2px var(--neutral);
+    cursor: pointer;
+}
+
+.factory-checkbox:hover {
+    background-color: var(--neutral);
+}
+
+.factory-checkbox-selected {
+    background-color: var(--primary);
+    border: none;
+}
+
+.factory-location img {
+   vertical-align: middle;
+   padding-right: 0.3rem;
+}
+
 /* Additional Notes section */
 #request-quote {
     width: 225px;
