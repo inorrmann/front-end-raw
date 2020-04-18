@@ -416,8 +416,6 @@ textarea {
 .select-items div,.select-selected {
     color: var(--text-dark);
     padding: 8px 16px;
-    /* border: solid 1px transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
     cursor: pointer;
 }
 
@@ -676,7 +674,6 @@ textarea {
 }
 
 /* Factories */
-
 .factories {
     display: flex;
     flex-wrap: wrap;
@@ -696,11 +693,6 @@ textarea {
     top: 0;
     left: 0;
     cursor: pointer;
-}
-
-.factory-image:hover {
-    background-color: var(--hover-primary);
-    border-radius: 10%;
 }
 
 .factory-checkbox, .factory-checkbox-selected {

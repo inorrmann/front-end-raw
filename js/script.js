@@ -24,7 +24,7 @@ $('.request-quote > img').click(function(e) {
 
 /* ADD JS HERE */
 
-// Create RFQ
+// Create RFQ Section
 $('.cat-button').click(function(e) {
     e.stopPropagation();
 
@@ -33,7 +33,7 @@ $('.cat-button').click(function(e) {
     $('.cat-button-selected').css('display', 'block');
 });
 
-// Add Inspirations
+// Add Inspirations Section
 $('.delete').click(function(e) {
     e.stopPropagation();
 
@@ -41,7 +41,7 @@ $('.delete').click(function(e) {
     $(`#${id}`).css('display', 'none');
 })
 
-// Optional Details
+// Optional Details Section
 $('.details-button').click(function(e) {
     e.stopPropagation();
 
@@ -60,7 +60,7 @@ $('.delete-option').click(function(e) {
     $(`#${id}-button`).attr('class', 'details-button');
 })
 
-// Factories
+// Factories Section
 $('.factory-checkbox').click(function(e) {
     e.stopPropagation();
 
