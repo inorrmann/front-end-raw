@@ -416,18 +416,18 @@ textarea {
 .select-items div,.select-selected {
     color: var(--text-dark);
     padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    /* border: solid 1px transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
     cursor: pointer;
 }
 
 .select-items {
     position: absolute;
-    /* background-color: var(--light); */
-    background-color: blue;
+    background-color: var(--light);
     top: 100%;
     left: 0;
     right: 0;
+    box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.5);
     z-index: 99;
 }
 
@@ -436,33 +436,8 @@ textarea {
 }
   
 .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--hover-primary);
 }
-
-/* select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 7px;
-    background: url("../images/Filter-by.svg");
-    background-repeat: no-repeat;
-    background-position: right 1em center;
-    background-size: 1rem;
-    font-family: var(--font-family);
-    font-weight: 700;
-    padding: 0.7rem;
-    width: 100%;
-    margin-bottom: 1rem;
-} */
-
-/* option {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-family: var(--font-family);
-    font-weight: 700;
-    background-color: var(--light);
-} */
 
 .checkbox {
     display: block;
@@ -498,7 +473,7 @@ textarea {
 }
 
 .checkbox:hover input ~ .checkmark:after {
-    background-color: var(--boxshadow-light);
+    background-color: var(--hover-primary);
 }
 
 .checkbox .checkmark:after {
@@ -542,11 +517,15 @@ textarea {
     margin: 0.4rem 1rem 1rem;
 }
 
+.cat-button:hover {
+    background-color: var(--hover-primary);
+}
+
 .cat-button-selected {
     border-radius: 28.5px;
     box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.1);
     border: solid 2px var(--primary);
-    background-color: #deede8;
+    background-color: var(--hover-primary);
     font-family: var(--font-family);
     font-weight: 700;
     color: var(--primary);
@@ -624,6 +603,10 @@ textarea {
 }
 
 /* Optional Details Section */
+.optional-details {
+    display: none;
+}
+
 .details-button {
     width: 100%;
     margin: 5px 0;
@@ -634,6 +617,10 @@ textarea {
     background-color: var(--light);
     font-family:  var(--font-family);
     color: var(--text-neutral)
+}
+
+.details-button:hover {
+    background-color: var(--hover-primary);
 }
 
 .details-button-selected {
@@ -723,7 +710,7 @@ textarea {
 }
 
 .factory-checkbox:hover {
-    background-color: var(--neutral);
+    background-color: var(--hover-primary);
 }
 
 .factory-checkbox-selected {

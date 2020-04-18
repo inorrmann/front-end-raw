@@ -175,11 +175,7 @@
                 <div class="wide-column-left">
                     <div class="dropdown">
                         <select id="projects" required>
-                            <!--  -->
-                            <!--  -->
-                            <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
-                            <!--  -->
-                            <!--  -->
+                            <option value="Pulingo" selected>Pulingo</option>
                             <option value="Pulingo">Pulingo</option>
                             <option value="Piaja">Piaja</option>
                         </select>
@@ -188,12 +184,9 @@
             </div>
             <h3>Category <span class="required-primary">*</span></h3>
             <div class="row categories">
-                <button class="cat-button-selected"><img src="./images/Upholstery-primary.svg">Upholstery</button>
-                <button class="cat-button"><img src="./images/Upholstery.svg">Upholstery</button>
-                <button class="cat-button-selected"><img src="./images/Casegoods-primary.svg">Casegoods</button>
-                <button class="cat-button"><img src="./images/Casegoods.svg">Casegoods</button>
-                <button class="cat-button-selected"><img src="./images/Metal-primary.svg">Metal</button>
-                <button class="cat-button"><img src="./images/Metal.svg">Metal</button>
+                <button class="cat-button" id="button-upholstery"><img src="./images/Upholstery.svg">Upholstery</button>
+                <button class="cat-button" id="button-casegoods"><img src="./images/Casegoods.svg">Casegoods</button>
+                <button class="cat-button" id="button-metal"><img src="./images/Metal.svg">Metal</button>
             </div>
 
         </div>
@@ -270,13 +263,6 @@
                     <h3>Leg/Base Material <span class="required-primary">*</span></h3>
                     <div class="dropdown">
                         <select id="leg-material" required>
-                            <!--  -->
-                            <!--  -->
-                            <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
-                            <!-- *** ABILITY TO BOLD FONTS *** -->
-                            <!--  *** ABILITY TO MAKE LINE DIVISIONS BETWEEN SECTIONS *** -->
-                            <!--  -->
-                            <!--  -->
                             <option selected><span>&emsp;</span></option>
                             <option value="alder">Alder</option>
                             <option value="lorem ipsum">Lorem Ipsum</option>
@@ -291,13 +277,6 @@
                     <h3>Leg/Base Finish <span class="required-primary">*</span></h3>
                     <div class="dropdown">
                         <select id="leg-finish" required>
-                        <!--  -->
-                        <!--  -->
-                        <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
-                        <!-- *** ABILITY TO BOLD FONTS *** -->
-                        <!--  *** ABILITY TO MAKE LINE DIVISIONS BETWEEN SECTIONS *** -->
-                        <!--  -->
-                        <!--  -->
                             <option selected><span>&emsp;</span></option>
                             <option value="white">White</option>
                             <option value="grey">Grey</option>
@@ -341,48 +320,42 @@
         
         <div class="row section-indent-left">
             <div class="wide-column-left">
-                <div id="hardware">
+                <div id="hardware" class="optional-details">
                     <h4 class="display-inline-block">Hardware (COM)<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable" rows="1"></textarea>
                 </div>
-                <div id="seat-dimensions">
+                <div id="seat-dimensions" class="optional-details">
                     <h4>Seat Dimensions<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable" rows="1"></textarea>
                 </div>    
-                <div id="arm-height">
+                <div id="arm-height" class="optional-details">
                     <h4>Arm Height<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="leg-height">
+                <div id="leg-height" class="optional-details">
                     <h4>Leg Height<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="seam-style">
+                <div id="seam-style" class="optional-details">
                     <h4>Seam Style<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="frame-construction">
+                <div id="frame-construction" class="optional-details">
                     <h4>Frame Construction<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="cushion-config">
+                <div id="cushion-config" class="optional-details">
                     <h4>Cushion Configuration<img src="images/Delete-image.svg" alt="close icon"></h4>
                     <textarea class="editable small-textarea" rows="1"></textarea>
                 </div>
-                <div id="cushion-fill">
+                <div id="cushion-fill" class="optional-details">
                     <h4>Cushion Fill</h4>
                     <div class="row">
                         <div class="column-left dropdown-details">
                             <div class="dropdown">
                                 <select id="cushion fill" required>
-                                    <!--  -->
-                                    <!--  -->
-                                    <!-- *** STYLE THE OPTIONS SO THE FONT IS MONTSERRAT *** -->
-                                    <!-- *** ABILITY TO BOLD FONTS *** -->
-                                    <!--  *** ABILITY TO MAKE LINE DIVISIONS BETWEEN SECTIONS *** -->
-                                    <!--  -->
-                                    <!--  -->
                                     <option value="all" selected>All</option>
+                                    <option value="all">All</option>
                                     <option value="seat cushion">Seat Cushion</option>
                                     <option value="back cushion">Back Cushion</option>
                                 </select>
@@ -424,7 +397,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="foam-density">
+                <div id="foam-density" class="optional-details">
                     <h4>Foam Density</h4>
                     <form class="row checkbox-options">
                         <label class="checkbox option">Builder's Choice (default)
@@ -462,7 +435,7 @@
                 </div>      
             </div>
             <div class="narrow-column-right">
-                <button class="details-button-selected">hardware</button>
+                <button class="details-button">hardware</button>
                 <button class="details-button">seat dimensions</button>
                 <button class="details-button">arm height</button>
                 <button class="details-button">leg height</button>
@@ -485,6 +458,11 @@
 
             <div class="factories">
                 <div class="factory-placeholder">
+                    <!--  -->
+                    <!--  -->
+                    <!--  MODAL FOR FACTORIES -->
+                    <!--  -->
+                    <!--  -->
                     <div class="factory-detail">
                         <div class="factory-checkbox"></div>
                         <img class="factory-image" src="images/Photo.svg" alt="photo placeholder">
