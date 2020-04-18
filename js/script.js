@@ -29,19 +29,29 @@ $('#button-upholstery').add('#button-casegoods').add('#button-metal').click(func
     e.stopPropagation();
 
     $(this).toggleClass('cat-button-selected');
-    $('.cat-button-selected').css("display", "block");
+    $('.cat-button-selected').css('display', 'block');
 });
 
 // Add Inspirations
 $('.delete').click(function(e) {
     e.stopPropagation();
 
-    let id = $(this).parent().attr("id");
-    $(`#${id}`).css("display", "none");
+    let id = $(this).parent().attr('id');
+    $(`#${id}`).css('display', 'none');
+})
+
+// Optional Details
+$('.details-button').click(function(e) {
+    e.stopPropagation();
+
+    let id = $(this).attr('name');
+    $(`#${id}`).css('display', 'block');
+
+    $(`#${id}-button`).attr('class', 'details-button-selected');
 })
 
 
-// customize dropdown menu
+// customize dropdown menus
 var x, i, j, selElmnt, a, b, c;
 x = $(".dropdown");
 for (i = 0; i < x.length; i++) {

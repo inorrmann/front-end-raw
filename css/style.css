@@ -603,7 +603,8 @@ textarea {
 }
 
 /* Optional Details Section */
-.optional-details {
+#hardware, #seat-dimensions, #arm-height, #leg-height, #seam-style, 
+#frame-construction, #cushion-config, #cushion-fill, #foam-density {
     display: none;
 }
 
